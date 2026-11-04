@@ -34,3 +34,11 @@ details[open] .collapse-label{display:inline}
 .delete-controls p{font-size:13px}
 .delete-controls button.delete-confirm{background:#9a2b2b;border-color:#9a2b2b;color:white}
 @media(max-width:650px){summary .response-toggle{margin-left:0;width:100%}}
+
+/* Match the 16px rhythm of the reading cards across all response sections. */
+.fields{gap:16px}
+.response{margin:0}
+.passages:not(:empty)+.response{margin-top:16px}
+.submit-panel{margin-top:16px}
+.response-unlabelled textarea{border-top:0;padding-top:0}
+.meta{justify-content:flex-end}
