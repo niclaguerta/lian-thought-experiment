@@ -4,13 +4,13 @@ An English-only workshop activity based on the original character cards, narrati
 
 ## Participant experience
 
-Follow parts 1, 2, 3, 4, 5, 6a, and 6b in order. Parts 1, 2, 3, and 5 are reading material. Part 4 collects moral and practical concerns. Parts 6a and 6b collect collaborative stories. All four written responses are submitted together, with an optional name and a random response code. Names are optional. Email addresses are not collected by this application.
+Follow parts 1, 2, 3, 4, 5, 6a, and 6b in order. Parts 1, 2, 3, and 5 are reading material. Part 4 collects moral and practical concerns. Parts 6a and 6b collect collaborative stories. All four written responses are submitted together, with a required name and a random response code. A name is required. Email addresses are not collected by this application.
 
 Drafts stay in the current browser when storage is available. Use a separate browser profile or device for each participant/group. A submission retry reuses the same response code so it cannot create duplicate records.
 
 ## Collection status
 
-Online submissions are enabled. The submission endpoint accepts the four written answers from the GitHub website. Stored responses remain protected: viewing and CSV export require the facilitator key. Participants may optionally provide a name; email addresses are not collected.
+Online submissions are enabled. The submission endpoint accepts the four written answers from the GitHub website. Stored responses remain protected: viewing and CSV export require the facilitator key. Participants must provide a name; email addresses are not collected.
 
 ## Hosting
 
