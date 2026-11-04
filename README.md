@@ -4,13 +4,13 @@ An English-only workshop activity based on the original character cards, narrati
 
 ## Participant experience
 
-Follow parts 1, 2, 3, 4, 5, 6a, and 6b in order. Parts 1, 2, 3, and 5 are reading material. Part 4 collects moral and practical concerns. Parts 6a and 6b collect collaborative stories. All four written responses are submitted together, with an optional group label and a random response code. Names and email addresses are not collected by this application.
+Follow parts 1, 2, 3, 4, 5, 6a, and 6b in order. Parts 1, 2, 3, and 5 are reading material. Part 4 collects moral and practical concerns. Parts 6a and 6b collect collaborative stories. All four written responses are submitted together, with an optional name and a random response code. Names are optional. Email addresses are not collected by this application.
 
 Drafts stay in the current browser when storage is available. Use a separate browser profile or device for each participant/group. A submission retry reuses the same response code so it cannot create duplicate records.
 
 ## Collection status
 
-Online submissions are enabled. The submission endpoint accepts the four written answers from the GitHub website. Stored responses remain protected: viewing and CSV export require the facilitator key. No participant names or email addresses are collected.
+Online submissions are enabled. The submission endpoint accepts the four written answers from the GitHub website. Stored responses remain protected: viewing and CSV export require the facilitator key. Participants may optionally provide a name; email addresses are not collected.
 
 ## Hosting
 
@@ -35,7 +35,7 @@ The Pages workflow publishes pushes to `main`. In repository Settings → Pages,
 
 ## Facilitator results
 
-Open `results.html` on GitHub Pages, or `/results` on the backend site. Enter the facilitator key. Search answers or group labels, expand each submission, and export the currently filtered results to CSV. The CSV includes a response code, timestamp, language, group label, and a separate column for each answer.
+Open `results.html` on GitHub Pages, or `/results` on the backend site. Enter the facilitator key. Search answers or names, expand each submission, and export the currently filtered results to CSV. The CSV includes a response code, timestamp, language, name, and a separate column for each answer.
 
 Set `ADMIN_KEY` as a secret in the backend's Sites runtime environment. Never add it to this repository, GitHub Pages variables, or frontend files. The key is only entered by the facilitator and sent directly to the backend over HTTPS. Production database records are distinct from local preview records.
 
