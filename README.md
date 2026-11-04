@@ -10,7 +10,7 @@ Drafts stay in the current browser when storage is available. Use a separate bro
 
 ## Collection status
 
-The backend is private at the owner’s request. GitHub Pages displays the activity and preserves browser-local drafts, but online submission is disabled there. Do not use the GitHub Pages version to collect live research data until an authorized participant-accessible submission service is connected. The private review site retains its database and protected results page.
+Online submissions are enabled. The submission endpoint accepts the four written answers from the GitHub website. Stored responses remain protected: viewing and CSV export require the facilitator key. No participant names or email addresses are collected.
 
 ## Hosting
 
