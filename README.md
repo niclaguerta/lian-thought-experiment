@@ -1,2 +1,48 @@
-# lian-thought-experiment
-English-only workshop activity exploring AI, authorship, and possible futures, with response collection and CSV export.
+# Thought Experiment · Lian
+
+An English-only workshop activity based on the original character cards, narrative, and worksheets. It reuses their artwork, sampled colors, and embedded font subsets.
+
+## Participant experience
+
+Follow parts 1, 2, 3, 4, 5, 6a, and 6b in order. Parts 1, 2, 3, and 5 are reading material. Part 4 collects moral and practical concerns. Parts 6a and 6b collect collaborative stories. All four written responses are submitted together, with an optional group label and a random response code. Names and email addresses are not collected by this application.
+
+Drafts stay in the current browser when storage is available. Use a separate browser profile or device for each participant/group. A submission retry reuses the same response code so it cannot create duplicate records.
+
+## Collection status
+
+The backend is private at the owner’s request. GitHub Pages displays the activity and preserves browser-local drafts, but online submission is disabled there. Do not use the GitHub Pages version to collect live research data until an authorized participant-accessible submission service is connected. The private review site retains its database and protected results page.
+
+## Hosting
+
+- **GitHub Pages:** the participant website and facilitator interface are compiled from `github-web/` using the same React screens in `app/`.
+- **Sites / Cloudflare Worker:** `/api/submissions` saves data in D1. `/api/results` requires the facilitator key. Responses never enter the GitHub repository.
+- Backend origin: `https://lian-thought-experiment.flashypumpkin.chatgpt.site`.
+- Allowed GitHub frontend origin: `https://niclaguerta.github.io`.
+
+GitHub Pages cannot run a server or database; the separate backend must be reachable for submissions and results to work.
+
+## Development
+
+Node 22.13+ is required.
+
+```sh
+npm ci
+npm run dev
+npm run build:pages
+```
+
+The Pages workflow publishes pushes to `main`. In repository Settings → Pages, choose **GitHub Actions** as the source. The generated website is in `github-pages/` and is not committed.
+
+## Facilitator results
+
+Open `results.html` on GitHub Pages, or `/results` on the backend site. Enter the facilitator key. Search answers or group labels, expand each submission, and export the currently filtered results to CSV. The CSV includes a response code, timestamp, language, group label, and a separate column for each answer.
+
+Set `ADMIN_KEY` as a secret in the backend's Sites runtime environment. Never add it to this repository, GitHub Pages variables, or frontend files. The key is only entered by the facilitator and sent directly to the backend over HTTPS. Production database records are distinct from local preview records.
+
+## Database changes
+
+The schema lives in `db/schema.ts`; generated migrations live in `drizzle/`. Generate new migrations with `npm run db:generate`. Deploy the Worker through Sites to apply production migrations. Do not edit an applied migration.
+
+## Source assets
+
+`public/original/` contains artwork rendered from the supplied PDFs and converted embedded font subsets. These are workshop source assets; no general reuse license is granted by this repository.

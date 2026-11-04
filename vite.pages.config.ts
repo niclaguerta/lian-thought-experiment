@@ -1,0 +1,2 @@
+import {defineConfig} from "vite";import react from "@vitejs/plugin-react";import {resolve} from "node:path";
+export default defineConfig({root:"github-web",base:"./",publicDir:"../public",plugins:[react()],build:{outDir:"../github-pages",emptyOutDir:true,rollupOptions:{input:{main:resolve(import.meta.dirname,"github-web/index.html"),results:resolve(import.meta.dirname,"github-web/results.html")}}}});

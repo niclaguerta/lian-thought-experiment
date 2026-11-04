@@ -1,0 +1,2 @@
+export function cors(req:Request){const origin=req.headers.get("origin")||"";const allowed=origin===new URL(req.url).origin||origin==="https://niclaguerta.github.io";return {allowed,headers:{"Cache-Control":"no-store","Vary":"Origin",...(allowed?{"Access-Control-Allow-Origin":origin,"Access-Control-Allow-Methods":"GET, POST, OPTIONS","Access-Control-Allow-Headers":"Content-Type, Authorization"}:{})}};}
+export function preflight(req:Request){const c=cors(req);return new Response(null,{status:c.allowed?204:403,headers:c.headers})}
