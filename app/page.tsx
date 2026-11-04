@@ -20,7 +20,7 @@ export default function Workshop(){
  <main><figure className="art-panel"><img src={assetBase+"original/"+artwork[step]+".webp"} alt={step===2?"Question card 3a from the original activity":"Original illustration of Lian, part "+numbers[step]}/></figure><div className="paper-content"><div className="meta"><span>{"PART"} {numbers[step]}{""}</span><span>{[3,5,6].includes(step)?"WRITE & REFLECT":"READ & CONSIDER"}</span></div>
  <div className="heading"><span className="big-number">{numbers[step]}</span><div><p className="eyebrow">{step<4?"YEAR 2026":"YEAR 2036"}</p><h1>{section[0]}</h1></div></div>
 
- <div className={step===2?"questions":"passages"}>{section.slice(1).map((s,i)=><div className="passage" key={i}>{step===2&&<img className="question-front" src={"/original/cards-"+[5,9,13,17][i]+".webp"} alt={"3"+String.fromCharCode(97+i)}/>}<p>{s}</p></div>)}</div>
+ <div className={step===2?"questions":"passages"}>{section.slice(1).map((s,i)=><div className="passage" key={i}>{step===2&&<b className="question-label">3{String.fromCharCode(97+i)}</b>}<p>{s}</p></div>)}</div>
  {step===3&&<div className="fields">{field("moral","Moral concerns")}{field("practical","Practical concerns")}</div>}
  {step===5&&field("amplificant","Lian’s adventures as an Amplificant")}
  {step===6&&field("renunciant","Lian’s adventures as a Renunciant")}
