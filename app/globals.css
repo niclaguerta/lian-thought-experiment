@@ -21,3 +21,16 @@
 .results{font-family:Arial,Helvetica,sans-serif}
 .results :is(button,input,textarea,.answer,.stats b,code){font-family:inherit}
 .brand{font-family:Arial,Helvetica,sans-serif;font-weight:700}
+
+/* Keep original workshop title; use one complete face for uppercase instructions. */
+.brand{font-family:PDFScience,PDFScienceCards,Arial,sans-serif;font-weight:600}
+.meta{font-family:Arial,Helvetica,sans-serif}
+.response-toggle{margin-left:auto;font-size:12px;white-space:nowrap}
+.collapse-label{display:none}
+details[open] .expand-label{display:none}
+details[open] .collapse-label{display:inline}
+.delete-controls{border-top:1px solid #d2d2c3;padding-top:18px;margin-top:12px}
+.delete-controls button{border:1px solid #77776b;border-radius:4px;padding:10px 14px;background:transparent;margin-right:10px;font-size:13px}
+.delete-controls p{font-size:13px}
+.delete-controls button.delete-confirm{background:#9a2b2b;border-color:#9a2b2b;color:white}
+@media(max-width:650px){summary .response-toggle{margin-left:0;width:100%}}
