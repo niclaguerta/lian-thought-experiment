@@ -1,4 +1,6 @@
-# Thought Experiment · Lian
+# IDEA Workshop
+
+[Open the workshop](https://niclaguerta.github.io/ideaworkshop-authorship/) · [Facilitator results](https://niclaguerta.github.io/ideaworkshop-authorship/results.html)
 
 An English-only workshop activity based on the original character cards, narrative, and worksheets. It reuses their artwork, sampled colors, and embedded font subsets.
 
